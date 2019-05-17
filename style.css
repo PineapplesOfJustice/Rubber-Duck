@@ -1,0 +1,246 @@
+/* Fonts */
+
+@font-face {
+    font-family: "Chakra Petch";
+    src: url("Asset/Font/ChakraPetch-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Special Elite";
+    src: url("Asset/Font/Special Elite.ttf");
+}
+
+@font-face {
+    font-family: "Audiowide";
+    src: url("Asset/Font/Audiowide.ttf");
+}
+
+
+/* Basic */
+
+body {
+    background-color: black;
+    height: 100%;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+}
+
+#p5_loading p {
+    font-family: Chakra Petch;
+    font-size: 7vh;
+    text-decoration: underline;
+    text-shadow: -2px -1px 5px black;
+    color: white;    
+    text-align: center;
+}
+
+#p5_loading img {
+    height: 110vh;
+    width: auto;
+    margin: auto;
+    display: block;
+}
+
+h1 {
+    font-size: 80px; 
+    font-family: Ravi Prakash;
+    color: whitesmoke; 
+    margin-bottom: 0px;  
+}
+
+h2 {
+    margin-top: 0px;  
+    font-size: 20px;
+    font-family: Ravi Prakash; 
+    color: whitesmoke;
+}
+
+button {
+    margin-right: 7px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 150px;
+    height: 30px;  
+    background-color: beige;
+    font-family: Special Elite;
+    color: purple; 
+    border-color: purple;  
+    cursor: pointer;
+}
+
+button:hover { 
+    color: beige;
+    background-color: purple;  
+}
+
+*{
+    -webkit-touch-callout: none;  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Slider */
+
+input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 120px; 
+    height: 7px;
+    outline: none; 
+    opacity: 0.7; 
+    -webkit-transition: .5s; 
+    transition: opacity .5s;
+}
+
+input[type=range]:hover {
+    opacity: 1; 
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 0;
+    width: 30px; 
+    height: 50px;
+    background: url('Asset/Image/Lightbulb/off.gif');
+    background-size: contain;
+    cursor: pointer;
+    opacity: 1;
+}
+
+input[type=range]:focus::-webkit-slider-thumb {
+    background: url('Asset/Image/Lightbulb/on.gif');
+    background-size: contain;
+    opacity: 1; 
+}
+
+input[type=range]::-moz-range-thumb {
+    border: 0;
+    width: 30px; 
+    height: 50px;
+    background: url('Asset/Image/Lightbulb/off.gif');
+    background-size: contain;
+    cursor: pointer;
+    opacity: 1; 
+}
+
+input[type=range]:focus::-moz-range-thumb {
+    background: url('Asset/Image/Lightbulb/on.gif');
+    background-size: contain;
+    opacity: 1; 
+}
+
+
+/* Tutorial Box */
+
+#tutorialSpace {
+    width: 650px;
+    height: 300px; 
+    position: absolute;
+    z-index: 9;
+    background-color: black;
+    border: 3px solid white;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#tutorialSpaceHeader {  
+    padding: 10px;  
+    width: 67%;
+    float: left;  
+    cursor: move;
+    z-index: 10;
+    border: 3px solid #2196F3;
+    color: #fff;
+    text-align: center;
+    font-family: Audiowide;
+}
+
+#tutorialSpaceHeader:hover {
+    background-color: #2196F3;
+    border: 3px solid black;
+    color: black;
+}
+
+#deleteButton {
+    padding: 10px;
+    width: 25%;  
+    float: left;  
+    cursor: pointer;  
+    z-index: 10;
+    border: 3px solid red;
+    color: #fff;
+    text-align: center;
+    font-family: Audiowide;
+}
+
+#deleteButton:hover {
+    background-color: red;
+    border: 3px solid black;
+    color: black;
+}
+
+#tutorialText {
+    color: white;  
+    padding: 10px;  
+    margin-top: 20px;
+    font-family: Chakra Petch;
+    font-size: 110%;
+}
+
+.arrow {
+    border: solid white;
+    color: white;  
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.nextButton { 
+    border: none;
+    background-color: rgba(0, 0, 0, 0);  
+    color: whitesmoke;
+    width: 100px;
+    font-family: Special Elite;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.nextButton:hover { 
+    border: 2px solid whitesmoke;
+}
+
+.previousButton { 
+    border: none;
+    background-color: rgba(0, 0, 0, 0); 
+    color: whitesmoke;
+    width: 100px;
+    font-family: Special Elite;
+    position: absolute;
+    bottom: 20px;
+    right: 130px;
+}
+
+.previousButton:hover { 
+    border: 2px solid whitesmoke;
+}
